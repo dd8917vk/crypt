@@ -1,0 +1,136 @@
+
+html, body {
+    
+    background-color: #8600b3;
+    margin:0;
+    padding:0;
+}
+
+.welcome {
+    background-color:rgb(41, 31, 42);
+}
+
+div.welcome > p {
+    font-family: 'Bungee Shade';font-size: 22px;
+    color: white;
+    font-size: 3em;
+    text-align:center;
+}
+
+.container {
+    display:flex;
+}
+
+#cont1{
+    width:33%;
+    font-family: 'Bungee Shade';font-size: 30px;
+    color:white;
+    background-color:black;
+    border-radius:25px;
+    margin-left:20px;
+    height:100px;
+    
+}
+
+.container #cont1 > div {
+    text-align:center;
+}
+
+
+
+#cont2{
+    margin-left:10px;
+    margin-right:10px;
+    width:33%;
+}
+
+#cont2 > div {
+    
+    margin:auto;
+        
+}
+#cont2 > div:hover{
+    transition: 2s;
+    transform: rotate(-360deg);
+    
+}
+
+#cont2 > div > img{
+    width: 100%;
+    text-align:center;
+}
+
+#cont3{
+    width:33%;
+    font-family: 'Bungee Shade';font-size: 30px;
+    color:white;
+    background-color:black;
+    border-radius:25px;
+    margin-right:20px;
+    height:100px;
+}
+
+.container #cont3 > div {
+    text-align:center; 
+}
+
+.container2 {
+    display:flex;
+}
+
+#cont11{
+    width:33%;
+    text-align:center;
+    font-family: 'Bungee Shade';font-size: 20px;
+    color:white;
+    border-radius:25px;
+    margin-left:20px;
+    height:100px;
+}
+#cont12{
+    margin-left:10px;
+    margin-right:10px;
+    width:33%;
+    height:33%;
+}
+
+#cont13{
+    width:33%;
+    height:33%;
+    position:relative;
+    text-align:center;
+    font-family: 'Bungee Shade';font-size: 20px;
+    color:white;
+    border-radius:25px;
+    margin-right:20px;
+}
+
+.arrow{
+    height:100px;
+    width:150px;
+}
+
+input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgb(136, 50, 158);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 75%;
+    outline-color:rgb(215, 186, 223);;
+  }
+  
+  ::placeholder {
+      color:black;
+      opacity:.8;
+      font-family: 'Bungee Shade';font-size: 15px;
+      
+  }
