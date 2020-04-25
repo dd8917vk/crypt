@@ -35,6 +35,9 @@ div.welcome > p {
 .container #cont1 > div {
     text-align:center;
 }
+.container #cont1 > div:hover {
+    transform:scale(1.2);
+}
 
 
 
@@ -51,13 +54,13 @@ div.welcome > p {
 }
 #cont2 > div:hover{
     transition: 2s;
-    transform: rotate(-360deg);
-    
+    transform: rotate(-360deg) 
 }
 
 #cont2 > div > img{
     width: 100%;
     text-align:center;
+    transform:scale(.9);
 }
 
 #cont3{
@@ -74,6 +77,9 @@ div.welcome > p {
     text-align:center; 
 }
 
+.container #cont3 > div:hover {
+    transform:scale(1.1);
+}
 .container2 {
     display:flex;
 }
@@ -127,7 +133,9 @@ input[type=text] {
     width: 75%;
     outline-color:rgb(215, 186, 223);;
   }
-  
+  input[type=text]:hover {
+      transform:scale(1.2);
+  }  
   ::placeholder {
       color:black;
       opacity:.8;
