@@ -9,22 +9,52 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="bibleStyles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
         <div>
+            <h1>ezBible</h1>
+        </div>
+        <div style="text-align:center;">
+            <ul id="lis">
+                <li>KJV &bull;</li>
+                <li id="start">Verses: 31102 &bull;</li>
+                <li>Updated 1611</li>
+            </ul>
+        </div>
+        <div class="query">
             <form class="inputPlain">
-                <input id="search" oninput="getInput()" type="text" name="search" placeholder="-->ENCRYPT<--">
+                <input id="search" oninput="getInput()" type="text" name="search" placeholder="-->SEARCH<--">
             </form>
         </div>
-        <div>
-            <p id="output">
-            </p>
-        </div>
+        <div id="output">
+                <table class="tbl">
+                    <thead>
+                        <tr>
+                            <td width="10%">
+                                book	
+                            </td>
+                            <td width="10%">
+                                chapter
+                            </td>
+                            <td width="10%">
+                                verse
+                            </td>
+                            <td width="60%">
+                                text 
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody class="tblBdy">
+            
+                    </tbody>
+                </table>
+            </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="biblehelper.js"></script>
+        <script src="biblehelpercopy2.js"></script>
     </body>
 </html>

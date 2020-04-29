@@ -1,0 +1,55 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    background: gray;
+}
+
+body.fade {
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+h1 {
+    font-size: 4em;
+    text-align:center;
+    margin:auto;
+
+}
+#lis li{
+    display:inline;
+}
+
+#output {
+    text-align:center;
+    margin:auto;
+}
+
+body .query form input {
+    width: 100%;
+    height: 5rem;
+    font-size: 2rem;
+    font-family: serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Source Code Pro', monospace;
+    outline: none;
+}
+
+.tblBdy {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.tblBdy td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 20px;
+  }
+
+.tblBdy tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.tblBdy tr:hover {
+    background-color: #ddd;
+}

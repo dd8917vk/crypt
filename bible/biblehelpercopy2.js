@@ -19,6 +19,9 @@ var controls = {
         let srl = searchResults.length;
         let rows = document.querySelectorAll(".myTr");
         console.log(rows.length);
+    },
+    styleTable: function(){
+
     }
 }
 
@@ -44,51 +47,38 @@ function getInput(){
  
 function bibleSearch(){
     let searchResults = bibleSearch_helper();
-    let tblResults = '';
+    //console.log(searchResults);
     let text = '';
-    let searchResultsLength = searchResults.length; 
-    var tblBody = document.getElementsByClassName("tblBdy")[0];
-    //divided by four because am returning book, chap, verse and text in each sub array
-    let results = searchResultsLength / 4;
-    if(searchResultsLength > 400){
-        text+="<p>Too many results</p>";
-        text+="<p>Results: "+results+"</p>";
-    } else if(searchResultsLength < 400){
-        text+="<p>Results: "+results+"</p>";
-
-        
-        for(let i=0; i<searchResultsLength; i++){
-
-            //let tr = document.createElement("TR");
-            //tr.setAttribute("class", "myTr");
-            let row = tblBody.insertRow(0);
-            row.setAttribute("class", "myTr");
-            subSearchLen = searchResults[i].length;
-            for(let j=0; j<subSearchLen; j++){
-                let cell = row.insertCell(-1); 
-                cell.innerHTML = searchResults[i][j];
-                
-                //let td = document.createElement("TD");
-                //td.setAttribute("class", "myTd");
-                //let ce =  document.createTextNode(searchResults[i][j]);
-                //td.appendChild(ce);
-                //tr.appendChild(td);
+    let tbl = document.getElementsByClassName("tblBdy")[0];
+    let sr = searchResults.length;
+    let resText = '';
+    if(sr < 20){
+        for(let i=0; i<sr; i++){
+            srl = searchResults[i].length;
+            text+="<tr>";
+            for(let j=0; j<srl; j++){
+                console.log(searchResults[i][j]);
+                text+="<td>"+searchResults[i][j]+"</td>";
             }
-            //tblBody.insertRow(tr);
-
-            //tblBody.appendChild(tr);
-            //tblResults+=tr+td.appendChild(ce);
-            //text+="<p>"+searchResults[i]+"</p>";
+            text+="</tr>";
         }
+        let res = document.getElementById("start");
+        resText+="<li>Verses: "+sr+" &bull;"+"</li>";
+        res.innerHTML = resText;
+        tbl.innerHTML = text;
+    } else {
+        let res = document.getElementById("start");
+        sr = searchResults.length;
+        text+="<li>Verses: "+sr+" &bull;"+"</li>";
+        res.innerHTML = text;
     }
-    controls.deleteResults();
 }
-
 
 //This is the bible search function.  It is needed to search for the matching regex
 function bibleSearch_helper(){
     let searchResults = [];
     let input = document.getElementById("search").value;
+    //to reset results to 0 top of page
     //let searchString = '';
     let searchWords = input.split(' ');
     //console.log(searchString);
