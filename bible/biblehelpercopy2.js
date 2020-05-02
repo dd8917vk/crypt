@@ -15,13 +15,8 @@ fetch("http://127.0.0.1:8080/bible/master.json")
 var controls = {
     deleteResults: function(){
         let text = '';
-        let searchResults = bibleSearch_helper();
         let srl = searchResults.length;
         let rows = document.querySelectorAll(".myTr");
-        console.log(rows.length);
-    },
-    styleTable: function(){
-
     }
 }
 
@@ -57,7 +52,6 @@ function bibleSearch(){
             srl = searchResults[i].length;
             text+="<tr>";
             for(let j=0; j<srl; j++){
-                console.log(searchResults[i][j]);
                 text+="<td>"+searchResults[i][j]+"</td>";
             }
             text+="</tr>";
