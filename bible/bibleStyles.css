@@ -5,11 +5,6 @@ body {
     transition: background-color 0.5s;
 }
 
-body.fade {
-    -webkit-transition: background-color 0.5s;
-    transition: background-color 0.5s;
-    background-color: #112D32
-}
 body.results {
     background-color: #112D32
 }
@@ -18,7 +13,7 @@ body.results {
     padding-bottom: 10px;
 }
 h1 {
-    font-size: 4em;
+    font-size: 6vw;
     text-align:center;
     margin:auto;
 
@@ -53,7 +48,7 @@ body .query form input {
     border: 1px solid #ddd;
     border: 1px solid;
     padding: 8px;
-    font-size: 20px;
+    font-size: 1.5vw;
   }
 
 .tblBdy tr:nth-child(even){
@@ -65,5 +60,5 @@ body .query form input {
 }
 
 .tblBdy tr:hover {
-    background-color: #ddd;
+    background-color: rgb(221,221,221,0.1);
 }

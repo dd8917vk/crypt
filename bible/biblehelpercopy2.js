@@ -12,14 +12,6 @@ fetch("http://127.0.0.1:8080/bible/master.json")
   .then(data => obj = data)
   .then(() => console.log(obj))
 
-var controls = {
-    deleteResults: function(){
-        let text = '';
-        let srl = searchResults.length;
-        let rows = document.querySelectorAll(".myTr");
-    }
-}
-
 //commented out kepress part
 //used mod div for function instead.
 function getInput(){
@@ -47,7 +39,7 @@ function bibleSearch(){
     let tbl = document.getElementsByClassName("tblBdy")[0];
     let sr = searchResults.length;
     let resText = '';
-    if(sr < 20){
+    if(sr < 30){
         for(let i=0; i<sr; i++){
             srl = searchResults[i].length;
             text+="<tr>";
