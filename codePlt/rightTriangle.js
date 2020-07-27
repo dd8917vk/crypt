@@ -11,4 +11,3 @@ function triangle(num){
     let finalStarz = starzArr.join('');
     return finalStarz; 
 }
-console.log(triangle(6));
