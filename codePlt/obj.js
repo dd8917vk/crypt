@@ -55,4 +55,26 @@ function giveMedicine(name, medicine){
     }
   }
 }
-giveMedicine('max', 'ticks')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let myPerson = {
+  'name':'james',
+  'age':'old',
+  'aches': ['body aches', 'stomach aches', 'headaches']
+}
+
+
+
+console.log(myPerson.aches[2])

@@ -1,0 +1,16 @@
+pre {
+    text-align:center;
+    
+}
+a:link {
+    color:gray;
+    background-color:transparent;
+}
+.btn{
+    background-color:rgba(0,0,0,.1);
+    color:green;
+}
+.btn:hover{
+    background-color: rgba(0,0,0, .2);
+}
+

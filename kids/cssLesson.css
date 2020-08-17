@@ -1,0 +1,22 @@
+.d1{background:LightSkyBlue;grid-column: 1/5;}
+.d2{background:LightSalmon;grid-column: 1/1;}
+.d3{background:PaleTurquoise;grid-column: 2/3;}
+.d4{background:LightPink;grid-column: 3/4;}
+.d5{background:PaleGreen;grid-column: 4/5;}
+.d6{background:PaleVioletRed;grid-column:1/5;}
+
+.container {
+  font-size: 40px;
+  height: 100vh;
+  background: LightGray;
+  
+  /* Only change code below this line */
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+  /*column-gap: 10px;
+  row-gap: 10px;*/
+
+  
+  /* Only change code above this line */
+}
