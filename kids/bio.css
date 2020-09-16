@@ -1,0 +1,25 @@
+.row {
+    height: 100vh;
+}
+.left {
+    background-color: purple;
+}
+.center {
+    background-color: whitesmoke;
+}
+.right {
+    background-color:orange;
+}
+p {
+    font-family: 'Anonymous Pro', monospace;
+}
+.subtext {
+    font-family: 'Alegreya', serif;
+}
+.profile{
+    text-align:center;
+}
+img {
+    width: 75%;
+    height: auto;
+}
