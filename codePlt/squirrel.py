@@ -1,6 +1,6 @@
 #def squirrel(h, H, S): 
     #return H/h*(S*S+h*h)**.5
-squirrel = lambda h, H, S: round(H/h*(S*S+h*h)**.5, 4)
+squirrel=lambda h,H,S: round(H/h*(S*S+h*h)**.5,4)
 
 print(squirrel(4,16,3))#,20)
 print(squirrel(4,4,3))#,5)
